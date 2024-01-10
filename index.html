@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js"></script>
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+
+  <body>
+    <div class="card__container">
+      <div class="card">
+        <div class="form__container">
+          <form action="" method="post">
+            <div class="data__container">
+              <div class="dia">
+                <label for="" id="label-required1">Day</label><br />
+                <input
+                  type="text"
+                  name="ddia"
+                  id="ddia"
+                  value="DD"
+                  required
+                  maxlength="2"
+                />
+                <p id="error-data1"></p>
+              </div>
+              <div class="mes">
+                <label for="" id="label-required2">Month</label><br />
+                <input
+                  type="text"
+                  name="mmes"
+                  id="mmes"
+                  value="MM"
+                  required
+                  maxlength="2"
+                />
+                <p id="error-data2"></p>
+              </div>
+              <div class="ano">
+                <label for="" id="label-required3">Year</label><br />
+                <input
+                  type="text"
+                  name="aano"
+                  id="aano"
+                  value="YYYY"
+                  required
+                  maxlength="4"
+                />
+                <p id="error-data3"></p>
+              </div>
+            </div>
+
+            <div class="icon__container">
+              <p class="error" id="error-message"></p>
+              <div class="icon" onclick="validateForm()">
+                <img
+                  src="assets/images/icon-arrow.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <div class="resultado__container">
+              <div class="r__anos">
+                <span role="alert" id="dataErro" aria-hidden="true"></span>
+                <p id="resultado-anos">--</p>
+                <p>years</p>
+              </div>
+              <div class="r__meses">
+                <p id="resultado-meses">--</p>
+                <p>months</p>
+              </div>
+              <div class="r__dias">
+                <p id="resultado-dias">--</p>
+                <p>days</p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

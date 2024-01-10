@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(0, 0%, 94%);
+  font-family: "Poppins", sans-serif;
+}
+
+.card__container {
+  display: block;
+}
+
+.card {
+  width: 42rem;
+  height: 32rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px 15px 160px 15px;
+}
+
+.form__container {
+  padding: 2.8rem;
+}
+
+.data__container {
+  text-align: start;
+  justify-content: space-between;
+  display: flex;
+  margin-right: 7em;
+}
+
+.data__container .dia,
+.mes,
+.ano {
+  display: block;
+}
+
+.data__container input {
+  width: 6.8rem;
+  height: 3.5rem;
+  border-radius: 5px;
+  color: hsl(0, 1%, 44%, 0.8);
+  font-weight: 700;
+  font-size: 25px;
+  border: 2px solid hsl(0, 0%, 94%);
+  padding-left: 0.7em;
+}
+
+.data__container input:hover {
+  color: hsl(0, 0%, 8%);
+  border: 2px solid hsl(0, 0%, 8%);
+}
+
+.data__container label {
+  font-weight: 700;
+  font-size: 12px;
+  padding-bottom: 0.5em;
+  color: hsla(0, 1%, 44%, 0.9);
+  text-transform: uppercase;
+}
+
+.form__container .icon {
+  text-align: center;
+  justify-content: center;
+}
+
+.icon__container {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: hsl(259, 100%, 65%);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.icon:hover {
+  background-color: hsl(0, 0%, 8%);
+  transition: all ease-in 0.5s;
+  cursor: pointer;
+}
+
+.icon__container {
+  width: 100%;
+  height: 1px;
+  border: 1px solid hsl(0, 0%, 94%);
+  margin: 2.1em 0;
+}
+
+.icon img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.resultado__container {
+  display: block;
+  width: 100%;
+}
+
+.resultado__container .r__dias,
+.r__meses,
+.r__anos {
+  display: flex;
+}
+
+.resultado__container #resultado-dias,
+#resultado-meses,
+#resultado-anos {
+  letter-spacing: 15px;
+  color: hsl(259, 100%, 65%);
+}
+
+.resultado__container p {
+  font-size: 80px;
+  font-weight: 700;
+  font-style: italic;
+  height: 1em;
+}
+
+#error-data1,
+#error-data2,
+#error-data3 {
+  color: hsl(0, 100%, 67%);
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 376px) {
+  .card {
+    width: 21em;
+    height: 30em;
+    border-radius: 20px 20px 95px 20px;
+  }
+
+  .form__container {
+    padding: 3em 1.3em;
+  }
+
+  .data__container {
+    margin-right: 0;
+  }
+
+  .data__container input {
+    width: 4.8rem;
+    height: 3rem;
+    padding-left: 0.5em;
+    font-size: 20px;
+  }
+
+  .data__container label {
+    font-weight: 800;
+    font-size: 12px;
+  }
+
+  .icon {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    margin-right: 115px;
+  }
+
+  .icon__container {
+    width: 100%;
+    height: 1px;
+    border: 1px solid hsl(0, 0%, 94%);
+    margin: 4em 0 3em 0;
+  }
+
+  .icon img {
+    width: 40%;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .resultado__container {
+    display: block;
+    width: 100%;
+  }
+
+  .resultado__container .r__dias,
+  .r__meses,
+  .r__anos {
+    display: flex;
+  }
+
+  .resultado__container #resultado-dias,
+  #resultado-meses,
+  #resultado-anos {
+    letter-spacing: 15px;
+    color: hsl(259, 100%, 65%);
+  }
+
+  .resultado__container p {
+    font-size: 50px;
+  }
+
+  #error-data1,
+  #error-data2,
+  #error-data3 {
+    color: hsl(0, 100%, 67%);
+    font-size: 8.5px;
+    font-style: italic;
+    font-weight: 700;
+  }
+}
